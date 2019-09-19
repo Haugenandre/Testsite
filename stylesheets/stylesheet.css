@@ -1,0 +1,138 @@
+/** COLORS **/
+/**primary**/
+@import url("https://fonts.googleapis.com/css?family=Amiri|Roboto 100 400&display=swap");
+html {
+  font-size: 18px;
+  background: none;
+}
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  background: #18243f;
+  margin: 0;
+  color: #153559;
+  min-height: 3000px;
+}
+
+.grid {
+  background: #fff;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+/**FONTS**/
+h1, h2, h3, h4 {
+  font-family: Roboto;
+  font-weight: 700;
+  letter-spacing: 0.5;
+}
+
+s p,
+a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  margin-bottom: 3em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/**Topbanner**/
+.top-banner {
+  margin-top: 98px;
+}
+
+/**BUTTINS**/
+.btn {
+  display: inline-block;
+  padding: 20px 30px;
+  border-radius: 50px;
+  background: #e9425e;
+  min-width: 150px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+}
+.btn:hover {
+  background: #ef425e;
+}
+.btn:active {
+  background: #e9425e;
+  border: 5px solid rgba(200, 66, 94, 0.8);
+  padding: 15px 25px;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 20px 30px;
+  transition: all 0.2s ease;
+}
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #e9425e;
+  width: 60px;
+  height: 60px;
+  transition: all 0.5s ease;
+}
+.cta span {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  color: #153559;
+  vertical-align: middle;
+}
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #153559;
+  stroke-width: 2;
+  transform: translateX(-7px);
+  transition: all 0.5s ease;
+}
+.cta:hover span {
+  color: #fff;
+}
+.cta:hover svg {
+  transform: translateX(0);
+  transition: all 0.5s ease;
+  stroke: #fff;
+}
+.cta:hover:before {
+  width: 100%;
+}
+.cta:active.cta {
+  transform: translateX(0);
+  padding: 22px 30px;
+}
+.cta:active:before {
+  border: 5px solid rgba(200, 66, 94, 0.8);
+  /** padding: 14px 17px;**/
+  /**transform: scale(.96);**/
+}
+
+/**MEDIAQUARIES**/
+@media (min-width: 112.5em) {
+  .grid {
+    padding-left: 12vw;
+    padding-right: 12vw;
+  }
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
